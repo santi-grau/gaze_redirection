@@ -11,7 +11,7 @@ import tensorflow.contrib.slim as slim
 from tensorflow.contrib.data import shuffle_and_repeat, map_and_batch
 
 from src.archs import discriminator, generator, vgg_16
-from scipy.misc import imsave
+from skimage.io import imsave, imread
 from src.data_loader import ImageData
 from utils.ops import l1_loss, content_loss, style_loss, angular_error
 
